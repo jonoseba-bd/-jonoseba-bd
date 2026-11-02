@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="জনসেবা BD — সবার জন্য সহজ ও বিনামূল্যের ডিজিটাল সেবা।">
+  <title>জনসেবা BD | সেবা হোক সবার জন্য</title>
+  <style>
+    :root {
+      --navy: #123b62;
+      --blue: #1769aa;
+      --pale: #eef5fb;
+      --ink: #182638;
+      --muted: #607184;
+      --line: #e2eaf1;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Noto Sans Bengali", "SolaimanLipi", sans-serif;
+      color: var(--ink);
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+    .container { width: min(1100px, 92%); margin: auto; }
+    header { background: var(--white); border-bottom: 1px solid var(--line); }
+    .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 11px; color: var(--navy); font-size: 1.35rem; font-weight: 800; text-decoration: none; }
+    .brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; color: white; background: var(--navy); font-size: 1.25rem; }
+    nav { display: flex; gap: 22px; flex-wrap: wrap; }
+    nav a { color: #40566c; text-decoration: none; font-size: .95rem; }
+    nav a:hover { color: var(--blue); }
+    .hero { background: linear-gradient(125deg, #123b62, #1769aa); color: white; padding: 66px 0 58px; }
+    .hero-inner { max-width: 760px; }
+    .eyebrow { display: inline-block; padding: 5px 12px; border: 1px solid #ffffff55; border-radius: 99px; font-size: .85rem; color: #e4f1ff; }
+    h1 { margin: 17px 0 10px; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.2; }
+    .hero p { color: #e2effa; font-size: 1.08rem; margin: 0 0 25px; }
+    .search { display: flex; max-width: 610px; background: white; padding: 6px; border-radius: 13px; box-shadow: 0 8px 28px #08274435; }
+    .search input { min-width: 0; flex: 1; border: 0; outline: 0; padding: 12px 13px; font: inherit; color: var(--ink); }
+    .search button { border: 0; border-radius: 9px; background: #1769aa; color: white; padding: 0 20px; font: inherit; cursor: pointer; }
+    main { padding: 45px 0 60px; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 15px; margin-bottom: 20px; }
+    h2 { margin: 0; color: var(--navy); font-size: 1.7rem; }
+    .section-head p { margin: 5px 0 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+    .service { display: block; padding: 22px; background: white; border: 1px solid var(--line); border-radius: 16px; text-decoration: none; color: inherit; transition: .18s ease; }
+    .service:hover { transform: translateY(-3px); border-color: #b7d2e9; box-shadow: 0 10px 24px #183b5c10; }
+    .service-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 13px; background: var(--pale); font-size: 1.5rem; margin-bottom: 13px; }
+    .service h3 { margin: 0 0 5px; color: var(--navy); font-size: 1.1rem; }
+    .service p { margin: 0; color: var(--muted); font-size: .93rem; }
+    .empty { display: none; padding: 25px; color: var(--muted); text-align: center; background: white; border-radius: 12px; }
+    .promise { margin-top: 35px; padding: 25px; border-radius: 16px; background: #eaf3fb; }
+    .promise h2 { font-size: 1.35rem; }
+    .promise p { margin: 7px 0 0; color: #4e6479; }
+    footer { padding: 24px 0; background: #102f4c; color: #dbe8f4; text-align: center; font-size: .9rem; }
+    footer p { margin: 4px 0; }
+    @media (max-width: 760px) {
+      .nav { padding: 12px 0; align-items: flex-start; flex-direction: column; }
+      nav { gap: 14px; }
+      .hero { padding: 48px 0; }
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .grid { grid-template-columns: 1fr; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .search button { padding: 0 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="জনসেবা BD হোম">
+        <span class="brand-mark">জে</span><span>জনসেবা BD</span>
+      </a>
+      <nav aria-label="প্রধান মেনু">
+        <a href="#home">হোম</a>
+        <a href="#services">সেবাসমূহ</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <span class="eyebrow">সবার জন্য বিনামূল্যের ডিজিটাল সেবা</span>
+      <h1>সেবা হোক সবার জন্য</h1>
+      <p>আপনার প্রয়োজনীয় তথ্য, শিক্ষা ও দৈনন্দিন ডিজিটাল সহায়তা খুঁজে নিন এক জায়গায়।</p>
+      <form class="search" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="আপনি কী খুঁজছেন? যেমন: শিক্ষা, ক্যালকুলেটর" aria-label="সেবা খুঁজুন">
+        <button type="submit">খুঁজুন</button>
+      </form>
+    </div>
+  </section>
+
+  <main class="container" id="services">
+    <div class="section-head">
+      <div>
+        <h2>জনপ্রিয় সেবাসমূহ</h2>
+        <p>আপনার প্রয়োজন অনুযায়ী একটি বিভাগ বেছে নিন।</p>
+      </div>
+    </div>
+
+    <div class="grid" id="serviceGrid">
+      <a class="service" href="#education" data-search="শিক্ষা শিক্ষা সেবা পড়াশোনা ইংরেজি গণিত">
+        <div class="service-icon">📚</div><h3>শিক্ষা সেবা</h3><p>পড়াশোনা, ইংরেজি শেখা ও পরীক্ষার প্রস্তুতি।</p>
+      </a>
+      <a class="service" href="#jobs" data-search="চাকরি চাকরির খবর নিয়োগ পরীক্ষা প্রস্তুতি">
+        <div class="service-icon">💼</div><h3>চাকরি সেবা</h3><p>চাকরির বিজ্ঞপ্তি ও প্রস্তুতিমূলক তথ্য।</p>
+      </a>
+      <a class="service" href="#tools" data-search="অনলাইন টুলস ক্যালকুলেটর বয়স শতকরা হিসাব">
+        <div class="service-icon">🧮</div><h3>অনলাইন টুলস</h3><p>বয়স, শতকরা ও দৈনন্দিন হিসাবের সহায়তা।</p>
+      </a>
+      <a class="service" href="#citizen" data-search="নাগরিক সেবা সরকারি তথ্য জন্মনিবন্ধন nid পাসপোর্ট">
+        <div class="service-icon">🏛️</div><h3>নাগরিক তথ্য</h3><p>সরকারি সেবা সম্পর্কে তথ্য ও প্রয়োজনীয় লিংক।</p>
+      </a>
+      <a class="service" href="#language" data-search="ভাষা শিক্ষা বাংলা ইংরেজি অনুবাদ উচ্চারণ">
+        <div class="service-icon">🌐</div><h3>ভাষা শিক্ষা</h3><p>বাংলা-ইংরেজি শেখা, অনুবাদ ও উচ্চারণ।</p>
+      </a>
+      <a class="service" href="#health" data-search="স্বাস্থ্য তথ্য হাসপাতাল সচেতনতা">
+        <div class="service-icon">➕</div><h3>স্বাস্থ্য তথ্য</h3><p>স্বাস্থ্য সচেতনতা ও হাসপাতাল-সংক্রান্ত তথ্য।</p>
+      </a>
+    </div>
+    <div class="empty" id="emptyMessage">দুঃখিত, এই নামে কোনো বিভাগ পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।</div>
+
+    <section class="promise" id="about">
+      <h2>আমাদের অঙ্গীকার</h2>
+      <p>জনসেবা BD-এর লক্ষ্য হলো সহজ, নির্ভরযোগ্য ও বিনামূল্যের ডিজিটাল সেবা সবার কাছে পৌঁছে দেওয়া। তথ্য প্রকাশের আগে নির্ভরযোগ্য উৎস যাচাই করা হবে।</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>জনসেবা BD</strong> — সেবা হোক সবার জন্য।</p>
+      <p>© <span id="year"></span> জনসেবা BD। সর্বস্বত্ব সংরক্ষিত।</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('searchForm');
+    const input = document.getElementById('searchInput');
+    const cards = [...document.querySelectorAll('.service')];
+    const emptyMessage = document.getElementById('emptyMessage');
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function filterServices() {
+      const query = input.value.trim().toLocaleLowerCase();
+      let visible = 0;
+      cards.forEach(card => {
+        const searchable = (card.innerText + ' ' + card.dataset.search).toLocaleLowerCase();
+        const match = !query || searchable.includes(query);
+        card.style.display = match ? 'block' : 'none';
+        if (match) visible++;
+      });
+      emptyMessage.style.display = visible ? 'none' : 'block';
+    }
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      filterServices();
+      document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+    });
+    input.addEventListener('input', filterServices);
+  </script>
+</body>
+</html>
